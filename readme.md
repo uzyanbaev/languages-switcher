@@ -1,4 +1,9 @@
-#  Language Switcher for Websites (english) <a name="english"></a>
+# Navigation
+
+- [English](#english)
+- [Russian](#russian)
+
+# Language Switcher for Websites (english) <a name="english"></a>
 
 This is a simple language switcher for JavaScript-based websites, allowing you to switch between languages quickly and easily.
 
@@ -95,7 +100,7 @@ function resetLanguage() {
 
 <hr>
 
-# Language Switcher for Websites (russian)
+# Language Switcher for Websites (russian) <a name="russian"></a>
 
 Это простое средство переключения языков для веб-сайтов на основе JavaScript, позволяющее быстро и легко переключаться между языками.
 ## Демонстрация
