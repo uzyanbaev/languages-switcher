@@ -3,7 +3,7 @@
 This is a simple language switcher for JavaScript-based websites, allowing you to switch between languages quickly and easily.
 
 ## Demo
-- [demo](https://uzyanbaev-dev.ru/website_languages-switcher/)
+- [demo](https://uzyanbaev-dev.ru/languages-switcher/)
 
 ## How to Use
 
@@ -54,22 +54,20 @@ This is a simple language switcher for JavaScript-based websites, allowing you t
 
 > On the 3rd line, specify the path to your `json`
 ```javascript
-async function changeLanguage(id) {
-    try {
-        const response = await fetch('../data/translation.json');
-        const data = await response.json();
-
-        for (let key in data) {
-            const element = document.querySelector(`#${key}`);
-            if (element) {
-                element.textContent = data[key][id];
+function changeLanguage(id) {
+    fetch('data/translation.json')
+        .then(response => response.json())
+        .then(data => {
+            for (let key in data) {
+                let element = document.querySelector(`#${key}`);
+                if (element) {
+                    element.textContent = data[key][id];
+                }
             }
-        }
 
-        document.body.className = id;
-    } catch (error) {
-        console.error('Error:', error);
-    }
+            document.body.className = id;
+        })
+        .catch(error => console.error('Error:', error));
 }
 
 function resetLanguage() {
@@ -101,7 +99,7 @@ function resetLanguage() {
 
 Это простое средство переключения языков для веб-сайтов на основе JavaScript, позволяющее быстро и легко переключаться между языками.
 ## Демонстрация
-- [demo](https://uzyanbaev-dev.ru/website_languages-switcher/)
+- [demo](https://uzyanbaev-dev.ru/languages-switcher/)
 
 ## Как использовать
 
@@ -152,22 +150,20 @@ function resetLanguage() {
 
 > В 3-й строке укажите путь к вашему `json`
 ```javascript
-async function changeLanguage(id) {
-    try {
-        const response = await fetch('../data/translation.json');
-        const data = await response.json();
-
-        for (let key in data) {
-            const element = document.querySelector(`#${key}`);
-            if (element) {
-                element.textContent = data[key][id];
+function changeLanguage(id) {
+    fetch('data/translation.json')
+        .then(response => response.json())
+        .then(data => {
+            for (let key in data) {
+                let element = document.querySelector(`#${key}`);
+                if (element) {
+                    element.textContent = data[key][id];
+                }
             }
-        }
 
-        document.body.className = id;
-    } catch (error) {
-        console.error('Error:', error);
-    }
+            document.body.className = id;
+        })
+        .catch(error => console.error('Error:', error));
 }
 
 function resetLanguage() {
