@@ -1,0 +1,36 @@
+/* languages switcher styles*/
+.languages {
+    position: absolute;
+    z-index: 4;
+    top: 125px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #202020;
+    border-radius: 15px;
+    width: 220px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.languages__item {
+    cursor: pointer;
+}
+
+/* Example */
+.title {
+    text-align: center;
+    font-size: 32px;
+    color: #ffffff;
+}
+
+.title__text {
+    text-align: center;
+    font-size: 24px;
+    color: #727272;
+}
+
+body {
+    background-color: #000;
+}

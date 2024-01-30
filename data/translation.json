@@ -1,0 +1,12 @@
+{
+    "title": {
+        "ru": "Привет",
+        "china": "嗨",
+        "english": "Hello"
+    },
+    "text": {
+        "ru": "Пример текста",
+        "china": "示例文本",
+        "english": "Example text"
+    }
+}

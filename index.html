@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website Language Switcher</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Example -->
+    <div class="container">
+        <h1 id="title" class="title">Hello</h1>
+        <p id="text" class="title__text">Example text</p>
+    </div>
+
+    <!--languages switcher-->
+    <div class="languages" id="languageSelector">
+        <div class="languages__wrapper">
+            <img class="languages__item" src="img/languages/russian.png" alt="Russian flag" onclick="changeLanguage('ru')">
+            <img class="languages__item" src="img/languages/china.png" alt="Reset language" onclick="changeLanguage('china')">
+            <img class="languages__item" src="img/languages/english.png" alt="Reset language" onclick="changeLanguage('english')">
+            <img class="languages__item" src="img/languages/reset.png" alt="Reset language" onclick="resetLanguage('english')">
+        </div>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
